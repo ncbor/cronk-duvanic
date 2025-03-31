@@ -14,7 +14,7 @@ jobs:
 
       - name: "Print PR title"
         if: github.event_name == 'pull_request'
-        run: echo "${{ github.event.pull_request.title }}"
-
+        #aqui tinha injection, ver na base se der erro
+        
       - name: "Do something awesome"
         uses: super-safe/nothing-to-see-here-action@v1.2.3
